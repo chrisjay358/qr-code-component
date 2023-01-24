@@ -1,0 +1,77 @@
+:root {
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --cle-dark-blue: hsl(218, 44%, 22%);
+
+  /* Font Family */
+  --ff-regular: "Outfit", sans-serif;
+
+  /* Font Family */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-regular);
+  font-size: 1.5rem;
+  color: var(--clr-grayish-blue);
+  background: var(--clr-light-gray);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 6rem 3rem;
+}
+
+/* FIXME:: MY FIRST APPROACH */
+
+.product {
+  max-width: 30rem;
+  padding: 1.5rem;
+  padding-bottom: 3.7rem;
+  background: var(--clr-white);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-text-box {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.heading-primary {
+  font-size: 2.15rem;
+  color: var(--cle-dark-blue);
+  font-weight: var(--fw-bold);
+  justify-self: center;
+}
